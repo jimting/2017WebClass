@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+
+
+    <display-name>MLB</display-name>
+	<servlet>
+		<servlet-name>MLB</servlet-name>
+		<servlet-class>ntou.cs.JT.controller.QuizServlet</servlet-class>
+	</servlet>
+	<!-- Map the MyCMS name to the URI /CMS (main page for site) -->
+	<servlet-mapping>
+		<servlet-name>MLB</servlet-name>
+		<url-pattern>/MLB</url-pattern>
+	</servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>quiz-mlb.html</welcome-file>
+    </welcome-file-list>
+    
+</web-app>
